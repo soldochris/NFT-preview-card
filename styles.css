@@ -14,4 +14,108 @@
 body{
   font-family: "Outfit", sans-serif;
   font-size: 18px;
+  background-color: var(--Very-dark-blue-main);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+  & main{
+    width: 320px;
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 20px;
+    padding: 18px;
+
+    & img{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    & h2{
+      font-weight: 400;
+
+      & a{
+        text-decoration: none;
+        color: var(--White);
+      }
+
+      & a:hover{
+        color: var(--Cyan);
+      }
+    }
+
+    & p{
+      color: var(--Soft-blue);
+      font-weight: 300;
+    }
+
+    & .price{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & p{
+        display: flex;
+        color: var(--Cyan);
+
+        & img{
+          height: 18px;
+          margin-right: 8px;
+        }
+      }
+
+      & span{
+        display: flex;
+        color: var(--Soft-blue);
+        align-items: center;
+
+        & img{
+          height: 18px;
+          width: 18px;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    & .footer-card{
+      display: flex;
+      align-items: center;
+      border-top: solid 1px var(--Very-dark-blue-line);
+      padding-top: 8px;
+
+      & img{
+        width: 42px;
+        margin-right: 10px;
+        border: solid 1px var(--White);
+        border-radius: 50%;
+      }
+
+      & a{
+        color: var(--White);
+        text-decoration: none;
+      }
+
+      & a:hover{
+        color: var(--Cyan);
+      }
+    }
+  }
+  
+  
+  & footer{
+    text-align: center;
+    font-size: 12px;
+    color: var(--Soft-blue);
+
+    & a{
+      color: var(--White);
+      text-decoration: none;
+    }
+
+    & a:hover{
+      color: var(--Cyan);
+    }
+  }
 }
